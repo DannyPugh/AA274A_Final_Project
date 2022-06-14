@@ -1,0 +1,10 @@
+<launch>
+  <!-- MY NODES -->
+  <node pkg="asl_turtlebot" type="navigator.py" name="navigator" output="screen" />
+  <node pkg="asl_turtlebot" type="map_dilation.py" name="dilation" output="screen" />
+
+  <node pkg="asl_turtlebot" type="detector.py" name="detector" output="screen" />
+      <!-- MY PARAMS-->
+      <rosparam param="use_tf"   >true</rosparam>
+      
+</launch>
